@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #E5E5E5;
+}
+
+/* Grobal */
+
+.container-fluid{
+    width: 100%;
+    padding: 0 250px;
+    display: inline-block;
+}
+
+/* Header Section */
+
+.header{
+    background-color:#562EFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-weight: 500;
+    color: #562EFF;
+}
+
+
+.logo{
+    width: 50px;
+    margin-left: 250px;
+}
+
+nav-bar{
+    margin-left: 250px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background: #fff;
+    margin-top: 100px;
+}
+
+.top-player {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.player-img {
+    width: 56px;
+}
+.top-blog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.blog {
+    width: 5px;
+    box-sizing: border-box;
+    border-radius: 19px;
+}
+
+/* Course */
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.course-list {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 0 10px #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+.card-img {
+    width: 266px;
+    aspect-ratio: 30/25;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card-title {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.card-weiter {
+    font-size: 20px;
+    font-weight: 400;
+}
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.stars i {
+    color: orange;
+    font-size: 10px;
+}
+.rating-no {
+    font-size: 14px;
+}
+.card-desc {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+}
