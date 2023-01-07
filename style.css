@@ -5,7 +5,9 @@
     padding: 0;
     font-family:'Poppins', sans-serif;
     box-sizing: border-box;
-    background: #E5E5E5;
+}
+body {
+    background-color: #F3F1FF;
 }
 
 /* Grobal */
@@ -16,27 +18,45 @@
     display: inline-block;
 }
 
+.color {
+    color: #562EFF;
+    font-weight: 500;
+}
+
 /* Header Section */
 
 .header{
     background-color:#562EFF;
+}
+.header nav{
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
 }
-h2{
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.logo h1{
     font-weight: 500;
-    color: #562EFF;
+    color: #fff
 }
 
-
-.logo{
-    width: 50px;
-    margin-left: 250px;
-}
-
-nav-bar{
-    margin-left: 250px;
+.nav-bar{
+    display: flex;
+    gap: 15px; 
+    align-items: center;  
 }
 nav a {
     text-decoration: none;
@@ -46,28 +66,64 @@ nav a {
 /* Hero Section */
 
 .hero-section {
-    background: #fff;
-    margin-top: 100px;
+    width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
 }
-
-.top-player {
+.players {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.player {
+    display: flex;
+    gap: 15px;
+    align-items: center ;
 }
 .player-img {
     width: 56px;
 }
-.top-blog {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-.blog {
-    width: 5px;
-    box-sizing: border-box;
-    border-radius: 19px;
+.player p {
+    font-weight: 500;
 }
 
-/* Course */
+
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.blog {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.blog-img {
+   width: 177px;
+}
+.blog-dtaile h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+}
+.blog-dtaile p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+/* Populer Section */
+
+.populer-section {
+    width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
 
 .courses {
     display: grid;
@@ -82,17 +138,16 @@ nav a {
     padding: 20px;
 }
 .card-img {
-    width: 266px;
-    aspect-ratio: 30/25;
-    border-radius: 10px;
-    object-fit: cover;
+    width: 100%
 }
 .card-title {
     margin: 10px 0;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.48px;
+    font-family: 'Roboto', sans-serif;
 }
-.card-weiter {
+.card-price {
     font-size: 20px;
     font-weight: 400;
 }
@@ -112,4 +167,12 @@ nav a {
     font-size: 15px;
     line-height: 25px;
     margin-top: 10px;
+}
+
+.card-writer {
+    color: #ED6B4F;
+    font-weight: 400;
+    font-size: 14.69px;
+    line-height: 17.22px;
+    font-family: 'Roboto', sans-serif;
 }
